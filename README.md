@@ -5,7 +5,7 @@ A workout assisting posture detection armband running on MSP430G2553 using SPI c
 Hardware List:
 MSP430G2553 x 1 \
 ISM330DLC 6-axis IMUx 1 \
-24-WS2813 Mini RGB LED Ring x 1 \
+24-WS2813 Mini RGB LED Ring x 1 
 
 # The program will:
 1. Configure the board, the accelerometer, and the LED ring
