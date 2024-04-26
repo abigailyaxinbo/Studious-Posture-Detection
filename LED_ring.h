@@ -1,3 +1,5 @@
+/* driver adapted from github neopixel ws2812, modified by team studious 
+   https://github.com/mjmeli/MSP430-NeoPixel-WS2812-Library/tree/master */
 
 #define NUM_LEDS    (24)    // NUMBER OF LEDS IN YOUR STRIP
 
