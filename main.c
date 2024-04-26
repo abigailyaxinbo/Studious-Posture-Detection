@@ -6,7 +6,6 @@
 /**
  * main.c
  */
-
 //acceleration registers
 #define SET_ACC 0x10
 #define SET_GYRO 0x11
