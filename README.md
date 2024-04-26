@@ -17,6 +17,9 @@ ISM330DLC 6-axis IMUx 1
 4. Output the color warning the user if they are doing exercises improperly, otherwise, keep the green LEDs on
 5. Repeat step 2-4
 
+# Block Diagram for General Process
+![](https://github.com/abigailyaxinbo/Studious-Posture-Detection/blob/main/block%20diagram.png)
+
 # To build the hardware:
 1. Connect the following pins:
   a. LED Ring: 5V for VDD, GND for GND, 1.2 for SIG(or DIN)
