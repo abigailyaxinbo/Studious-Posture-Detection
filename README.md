@@ -3,9 +3,9 @@
 A workout assisting posture detection armband running on MSP430G2553 using SPI communication
 
 Hardware List:
-MSP430G2553 x 1
-ISM330DLC 6-axis IMUx 1
-24-WS2813 Mini RGB LED Ring x 1
+MSP430G2553 x 1 \
+ISM330DLC 6-axis IMUx 1 \
+24-WS2813 Mini RGB LED Ring x 1 \
 
 # The program will:
 1. Configure the board, the accelerometer, and the LED ring
@@ -18,7 +18,7 @@ ISM330DLC 6-axis IMUx 1
 5. Repeat step 2-4
 
 # Block Diagram for General Process
-![](https://github.com/abigailyaxinbo/Studious-Posture-Detection/blob/main/block%20diagram.png)
+![](https://github.com/abigailyaxinbo/Studious-Posture-Detection/blob/main/block%20diagram%201.png)
 
 # To build the hardware:
 1. Connect the following pins:
