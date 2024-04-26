@@ -35,4 +35,4 @@ Compile and flash the program into the microcontroller
 Do the workout and observe the feedback on the LED ring!
 
 Demo:
-
+![](https://github.com/abigailyaxinbo/Studious-Posture-Detection/blob/main/demo-1.gif)
