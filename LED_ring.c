@@ -1,4 +1,6 @@
-/* driver adapted from github neopixel ws2812, modified by team studious */
+/* driver adapted from github neopixel ws2812, modified by team studious 
+   https://github.com/mjmeli/MSP430-NeoPixel-WS2812-Library/tree/master */
+
 #include <LED_ring.h>
 #include <msp430.h>
 
