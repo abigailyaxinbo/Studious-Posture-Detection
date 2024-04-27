@@ -29,10 +29,10 @@ ISM330DLC 6-axis IMUx 1 \
   b. Place the accelerometer close to your wrist, on the upper side, face to the top.
 
 # To use the code:
-Put the electronic parts together
-Make an armband to hold parts
-Compile and flash the program into the microcontroller
-Do the workout and observe the feedback on the LED ring!
+Put the electronic parts together \
+Make an armband to hold parts \
+Compile and flash the program into the microcontroller \
+Do the workout and observe the feedback on the LED ring! 
 
 # Demo:
 ![](https://github.com/abigailyaxinbo/Studious-Posture-Detection/blob/main/demo-1.gif)
