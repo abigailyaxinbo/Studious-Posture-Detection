@@ -36,3 +36,6 @@ Do the workout and observe the feedback on the LED ring!
 
 # Demo:
 ![](https://github.com/abigailyaxinbo/Studious-Posture-Detection/blob/main/demo-1.gif)
+
+## Link to the video:
+![](https://drive.google.com/file/d/1TvHTmqPzSMVCyxP9DIdRR01OdI8vhqyt/view?usp=sharing)
