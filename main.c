@@ -180,21 +180,21 @@ int main(void)
         if (abs(davg1) > 500 || abs(davg2) > 300 || abs(davg3) > 1000 ||
             abs(davg4) > 1000 || abs(davg5) > 600 || abs(davg6) > 300)
         {
-            flag_l = 1;
+            flag_l = 1; //low flag triggered
             flag_h = 0;
             if (abs(davg1) > 1000 || abs(davg2) > 500 || abs(davg3) > 1500 ||
                 abs(davg4) > 1300 || abs(davg5) > 900  || abs(davg6) > 500)
             {
                 flag_l = 1;
-                flag_h = 1;
+                flag_h = 1; //high_flag triggered
             }
         }
         else
         {
             flag_l = 0;
-            flag_h = 0;
+            flag_h = 0; //clear flags
         }
-
+        //send the lights one by one to create the effect of looping
         if (i < NUM_LEDS) {
             if (flag_l == 1 && flag_h == 0) {
                 setLEDColor(i, 0x08, 0x08, 0x00); //yellow
@@ -215,7 +215,7 @@ int main(void)
     return 0;
 }
 
-
+//set the imu spi connections
 void setup_IMU_SPI(void){
 
     DCOCTL = 0;                 // Select lowest DCOx and MODx settings
@@ -238,10 +238,10 @@ void setup_IMU_SPI(void){
     UCB0CTL1 &= ~UCSWRST;           // Initialize USCI state machine
 
 }
-
+//read from imu registers
 int read_IMU_SPI(uint8_t register_address, unsigned int chip_select){
     uint8_t dataOut = 0;
-
+    //select chip
     P2OUT &= ~chip_select;
     __delay_cycles(20);
 
@@ -252,15 +252,15 @@ int read_IMU_SPI(uint8_t register_address, unsigned int chip_select){
     dataOut = UCB0RXBUF;
     while (!(IFG2 & UCB0RXIFG));
     dataOut = UCB0RXBUF;
-
+    //deselect chip
     P2OUT |= chip_select;
     __delay_cycles(100);
     return dataOut;
 }
-
+//write to imu registers
 int send_IMU_SPI(uint8_t register_address, uint8_t write_byte, unsigned int chip_select) {
     uint8_t dataOut = 0;
-
+    //select chip
     P2OUT &= ~chip_select;
     _delay_cycles(20);
     //write the address you want to read
@@ -272,7 +272,7 @@ int send_IMU_SPI(uint8_t register_address, uint8_t write_byte, unsigned int chip
     dataOut = UCB0RXBUF;
     while (!(IFG2 & UCB0RXIFG));
     dataOut = UCB0RXBUF;
-
+    //deselect chip
     P2OUT |= chip_select;
     __delay_cycles(100);
 }
